@@ -1,49 +1,50 @@
-<!DOCTYPE html>
-Enter an ammount of columns and rows
-<form action="" method="post">
-<input type = "text" name = "row"  value = "Rows">
-<br><br>
-<input type = "text" name = "col"  value = "Columns">
-<br><br>
-<input type = "submit" name = "sub" value = "submit">
-</form>
-</html>
 <html>
-<table border ="1">
+<!-- Shirley Ni's Homework #3 -->
+
+<body>
+
+<table border="1">
+
 <?php
 
-if(isset($_POST['row']))
-{
-$r = $_POST['row'];
-}
-if(isset($_POST['col']))
-{
-$c = $_POST['col'];
-
-}
 
 
-$total = $r * $c;
-$i=0;
-$j=0;
-if(isset($_POST['sub']))
+$r = '';
+$c = '';
+if(isset($_POST['submit']))							
 {
-	while($i<$r)
-	{
-	echo "<tr>";
-	while($j<$c)
-	{
-		echo "<td>"."  "."</td>";
-		$j++;
-		
-	}
-	echo "</tr>";
-	$i++;
+	$r = $_POST['rows'];
+	$c = $_POST['columns'];
 	
-	}
+	makeGrid($r, $c);
+	
+	
+}
+
+function makeGrid($rows, $columns){
+		
+		//I decremented the actual number of rows and columns 
+		//because the table tag adds an extra row and column to the user inputs
+		
+		$rows--;
+		$columns--; 
+	
+		for ($i = 0; $i <= $rows; $i++)
+		{
+			echo "<tr>"."</tr>";
+			for ($j = 0; $j <= $columns; $j++)
+			{
+				echo "<td>"."</td>";
+			}
+			
+		}
+	
+	
+		
 }
 
 ?>
 
 </table>
+</body>
 </html>
