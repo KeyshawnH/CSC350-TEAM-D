@@ -1,0 +1,36 @@
+Remaining weeks for project should look like this
+
+1. Database design and DFD
+2. PHP code and Use Case diagram and Entity-Relationship
+3. Database dictionary & Testing and Debugging
+
+Assigned 4-10-20    Due 4-14-20     
+For Juan, based on the rules we agreed upon. Try and create a database design that we can use to start. Things like primary keys, how we interpret information from the sample excel sheet. For example, take a look at the sample data the professor gave us and use that to determine what would be stored and where in a database. Like storing classes in a table, what are the columns
+and how different tables interact with each other. 
+-List all of the data points
+-Group them by tables
+-Identify foreign keys and primary keys
+-identifying how a database should 
+
+Due 4-14-20
+Keyshawn Data Flow Diagram and Updated Gantt chart 
+
+
+Due by 4-14-20
+
+Shirley: SQL Database design same assignment as Juan but these are to be done individually and we then take those and compare and create a final version as a group. 
+
+
+
+4-15-20
+
+Combined SQL Design sheet, look these over and find what you think is essential for our design.
+
+4-17-20 
+
+With your selections made, we will sit down in a group meeting and get this database created and running. 
+
+
+
+Please upload to GitHub
+
