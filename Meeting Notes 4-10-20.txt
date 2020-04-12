@@ -1,0 +1,100 @@
+Input information:
+
+From 2 files:
+
+-Class ex: CSC-110
+-Days to be schedueled
+
+2nd File:
+-Rooms to scheduele
+
+
+Example database design
+CREATE TABLE Classes(
+
+classID VARCHAR(10)
+Days Int
+
+)
+
+Create TABLE Rooms(
+
+RoomNmbr VARCHAR(10)
+
+)
+
+
+Process:
+
+-Read data from input file "classes"
+-> insert into database table 1
+-Read data from file "Rooms"
+-> insert to database Table 2
+
+
+
+
+where the data starts and how it goes into the database and how it comes out
+
+
+
+
+
+database design 
+-How did you store the information on paper?
+
+if you had to store all the data you had on the paper what would be the most practical way to store data.
+
+
+if you were taking coffee order for the whole class
+
+Mike small coffee $1.50
+joe small coffee $1.50
+Keyshawn large coffee $2
+
+size:  price:
+small 	1.50
+
+the prices are always the same, you can store orders in one table and keep prices in another table.
+
+redundant information is like price, its redundant, however something like coffee size is tied to our individual orders.
+
+
+
+primary key would be section number
+
+using section numbers, you can use primary key section number to then get start and end times. 
+
+data flow diagram
+
+
+use case diagram does not include time, so nothing is linear in a use case diagram,
+
+use case is an all at once view, its not linear  this is what makes it difference from a data flow diagram.
+
+
+3 days Database design 
+
+-identify keys elements needed for our database
+-
+
+
+
+1. Determine the database purpose
+1. Discover/collect information
+3. Divide entities intos tables
+4. Turn Data points into tables
+5. Identify Primary Keys and Foreign Key
+6. Normalize and Refine!
+Link to these steps:  https://www.youtube.com/watch?v=cepspxPAUTA
+Normalization: https://www.youtube.com/watch?v=upS2HlUj1gI
+
+
+
+
+
+
+
+
+
+
