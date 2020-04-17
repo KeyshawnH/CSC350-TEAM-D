@@ -1,0 +1,133 @@
+Information for our input:
+
+Course Number
+Days to scheduele
+Rooms
+
+What information would we have to come up with for our display?
+
+-Start time 
+-End time
+-Section number
+-Room Tables (?)
+
+
+What would a full table look like for our schedueling? 
+
+Course Number | Days to Scheduele | Section Number | Start Time | End time | Room Number|
+-----------------------------------------------------------------------------------------
+CSC-100       | 3                 |     0800       | 8:00AM     | 10:00am  | F907
+CSC-211       | 1                 |     1200       | 12:00PM    | 05:00PM  | F909
+CSC-100       | 2                 |     0900       | 01:00PM    | 04:00PM  | F1202
+CSC-350       | 3                 |     1300       | 01:00PM    | 03:00PM  | F1001
+
+
+
+
+What output does our client expect?
+
+One Grid Box example
+
+-----MONDAY--------
+CSC-0800          |
+F907              |
+8:00am - 10:00AM  |
+------------------|
+
+How can we approach delivering this to our client with our given information?
+-We recieve an input of days and classes to scheduele. We do not recieve section numbers.
+-We recieve an input of rooms, this is a simple list of rooms that are available.
+-We need to deliver an end product as listed above with the following information:
+	a. Class Number
+	b. Section Number
+	c. Room Number
+	d. Start Time
+	e. End Time
+
+
+
+
+
+
+
+
+What information would give us other information?
+
+-If we know the section number, we know the start and end time. If we know the days to scheduele, we can
+assign a proper section number to scheduele to the class
+-Section number cannot tell us the room number. Room number is independent of any other variables.
+-When importing data, we would recieve a course number like CSC-100 and the number of days to scheduele it.
+-We can use the number of days we recieve to assign an appropriate section number, like 0800 for an 8am class
+-If We know the course name + section number + Room Number We know start and end time, aswell as days per week
+-Because that class would be schedueled for X amount of days per week for Y room, with a section number Z 
+- X+Y+Z = a full schedule because:
+	X amount of days could lead to giving us a section number, or just the number of repitions of an entry 
+		into a rooms table we would need.
+
+	Y room, room number Y would allow us to generate the schedule for that room, all classes with room Y would be
+		generated for display on output.
+	Z section number would give us a start and end time. This has to be done in combination with room number, because
+		2 section 1200 CSC-100 classes could happen simultaneously in 2 different rooms.
+
+
+
+
+What should be a seperate table?
+-We want to avoid room overlap with classes meaning that:
+	Monday CSC-100-1200 F907 8:00AM  11:00AM
+	
+	Monday CSC-211-1200 F907 8:00AM  11:00AM
+
+should not happen. 
+
+What would cause this overlap?
+	I believe this overlap could be caused by times being interfered with eachother. Also a conflict of a start and end time being the same
+	for the same room. We can have the same section number, thats just their start time for a certain day of the week.
+	They can have the same day of the week too, and even the same course number. They cannot however, have the same room number aswell as section number and day all at once.
+
+
+If I recieve 3 instances of a CSC-100 class to scheduele:
+CSC-100  3 
+CSC-100  2
+CSC-100  3
+
+CSC-100 has 6 class hours (example)
+6 hours / 3 days = 2 hours per day.
+
+I would need 3 2-Hour time slots throughout the week
+
+
+
+
+
+
+
+In an ideal situation:
+-I can assign a class to a room, give it a start and end time based on its section number and number of days. 
+
+
+Normalization Attempt
+
+CS = course section
+CN = Course Number
+RN = Room Number
+Start = Start Time
+End = End Time
+Days = Days to scheduele 
+
+{CS,RN,Days} = {CS,Start,End,RN,Days}
+
+RN = {RN}
+Days = {Days}
+
+
+
+
+What does our PHP do exactly?
+-Our PHP Code should, as of today, with what I know right now, simply interpret our database. It should
+create a grid, which we've done, with information stored in our database.
+Our PHP should:
+
+Recieve input --> Insert the file to database --> retrieve the information based on a room number.
+Our database should do the insertion, the interpretation of what we give it. This is where our design is crucial.
+
