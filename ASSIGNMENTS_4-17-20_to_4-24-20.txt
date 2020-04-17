@@ -1,0 +1,22 @@
+Assignments for 4-17-20 to 4-24-20
+
+
+Juan: Database dictionary and normalization done the professors method
+Shirley: Table version of database design, ERD diagram, 
+Keyshawn: Professors method of normalization, GANTT CHart revision, DFD 
+
+4=17=20 to 4-20-20
+
+-Database design and normalization of database
+-
+
+4-22-20
+-Revision of database design
+-Try to get Mike for wednesday.
+
+
+4-24-20
+
+-Database dictionary
+-Get the schema done and database dictionary done
+-Review the Deliverables GANTT chart, DFD etc.
