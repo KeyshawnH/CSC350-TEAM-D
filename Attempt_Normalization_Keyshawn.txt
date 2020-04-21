@@ -1,0 +1,51 @@
+//As we discussed, we're going to go over this with Mike on wednesday. 
+//
+
+//QUESTIONS FOR MIKE ON WEDNESDAY:
+	-Should i make a primary key? 
+	-Is this proper normalization?
+	-What would constitute as a primary key in this case? RoomNo+ClassNo+section?
+	
+
+
+An attempt at normalization.
+
+First form: No multiple pieces of data in a slot
+		schedule table
+
+ROOM	CLASS NO	SEC	START		END		
+F907	CSC-100 	A	11:00AM		1:00PM	
+F1201	CSC-100		B	4:00PM		6:00PM		
+F801	CIS-450		A 	8:00AM		10:00AM		
+F907	CSC-211		C	12:00PM		1:00PM		
+F1001	CSC0-331	D	5:00PM		7:00PM		
+F1201	CSC-111 	F	7:00PM		10:00PM	
+M1103	CSC-211		X	8:00PM		10:00PM	
+
+roomno,clasno,secno,start,end
+
+RoomNo --> {RoomNo}
+RoomNo,ClassNo -->{RoomNo,ClassNo}
+RoomNo,ClassNo,Sec -->{RoomNo,ClassNo,Start,End,}
+ClassNo,Sec,Start --> {ClassNo,Sec,start,end}
+
+Table 1: Room,class no, sec
+Table 2: Sec, start, end
+
+ROOM	CLASS NO	SEC			
+F907	CSC-100 	A	
+F1201	CSC-100		B		
+F801	CIS-450		A 		
+F907	CSC-211		C			
+F1001	CSC0-331	D		
+F1201	CSC-111 	F	
+M1103	CSC-211		X
+
+SEC	START		END		
+A	11:00AM		1:00PM	
+B	4:00PM		6:00PM		
+E 	8:00AM		10:00AM		
+C	12:00PM		1:00PM		
+D	5:00PM		7:00PM		
+F	7:00PM		10:00PM	
+X	8:00PM		10:00PM	
