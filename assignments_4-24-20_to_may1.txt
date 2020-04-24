@@ -1,0 +1,15 @@
+Assignment sheet for Week 4-24-2020 --> 5-01-2020
+
+
+Assignments for everyone.
+
+
+By wednesday
+-How php interacts with database
+-Insertion algorithims
+-Hourly distribution
+
+
+
+Friday worst case scenario
+-Exporting the data
