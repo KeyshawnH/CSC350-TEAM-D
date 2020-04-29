@@ -1,0 +1,41 @@
+//Keyshawn Harinarain, CSC-350-1200
+Team D
+ASSIGNMENTS 4-29-2020 to TEMP: May -1-2020
+
+-Expand on algorithim
+
+
+-Draw UI 
+
+
+-Set up DB
+
+-ERD
+
+
+
+Everyone:
+-Review DB Design
+-Inserting into the DB and inserting into the Grid.
+-Drawing out the UI.
+
+
+Juan:
+
+// setup a quick table in a database, and try to get the information onto the screen in php.
+-Reading a CSV file and displaying information on the screen. using php
+-Sending information to the database, and returning it using php
+-How the PHP reads CSV files
+
+
+// 
+Shirley:
+-Starting the ERD, working in the database and setting it up as another way to access our DB.
+
+Keyshawn:
+-Project description, Importing DATA into PHP and reading and using it to insert to a database, algorithim related work on improving the algorithim.
+- Updating GANTT and getting deliverables in order, also updating and finalizing the DFD Charts. 
+
+
+
+
