@@ -1,0 +1,96 @@
+Logic for the PHP
+
+
+//KEYSHAWN HARINARAIN
+
+
+//The input is to be read from files.
+
+
+//Reading firs class, that classes days,first room number from the files
+
+Line 1 --> $Room
+Class --> $class
+Days --> $days
+
+//Rooms can hold a total of 98 slots, we know a room is full if ALL 98 slots are filled.
+
+$slotCt = 98;
+
+//Keep going until room is full
+While (slotCt > 0)
+
+// hours for each day. Cannot exceed 14
+$monday = 0;
+$tuesday =0;
+$wednesday =0;
+$thursday =0;
+$friday = 0;
+$saturday =0;
+$sunday =0;
+
+$timeSlots = [0800,0900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200]
+	
+$section = 0;
+
+	{
+	// grab hours from DB
+  $sqlHours = "Select HOURS where class == $class";
+			
+      
+      
+      // we don't have a special case of uneven division.
+	if($sqlHours % $days == 0)
+			{
+        if($days == 2)
+        {
+          $x = $sqlHours / $days;
+          $y = 0;
+        
+        
+        // 
+        if($tuesday + $x <= 14)
+          while($y < $x)
+            {
+              INSERT $class,$Room,$TimeSlots[$tuesday],$section  INTO ScheduleTable
+              $y++;
+              $tuesday++;
+              
+            }
+            UPDATE $Schedule SET endtime = $tuesday WHERE class = $class AND SecNum = $section;
+        }
+      
+      }
+
+
+
+
+
+
+//special cases:
+
+Days are 3, hours are 5
+Days are 2 hours are 3
+Days are 3 hours are 4
+
+
+Filling order for 3 days
+
+MWF 
+TuThSat
+FriSatSun
+
+2 Days:
+TuThur
+MW
+FriSat
+SatSun
+
+
+
+
+
+
+
+
+	}
