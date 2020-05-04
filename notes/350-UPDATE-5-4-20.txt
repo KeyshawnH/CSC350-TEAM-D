@@ -1,0 +1,11 @@
+files should be named specifically, this is regarding the php and DB.
+
+
+they will have specific names, professor will update us on what the names should be
+
+opening file is:
+
+index.php
+
+for the script:
+
