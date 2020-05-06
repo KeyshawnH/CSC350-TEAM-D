@@ -1,0 +1,26 @@
+<?php
+$x = fopen("class.csv", "r");
+$data = fgetcsv($x, 10, ",");
+
+
+
+while(($data = fgetcsv($x, 10, ","))!==FALSE){
+  echo $data[0];
+  echo "<br><br>";
+  echo $data[1];
+  echo "<br><br>";
+}
+// Reads line with Classes, heres my appraoch with getting the hours from DB:
+
+// $class = $data[0];
+// $dbAccess = "SELECT TotalHours FROM Classes WHERE class = $class"
+
+//That statement will take the class we read, go into the DB and return the hours
+// This sets us up for our division. Take that hours and put it in a 
+
+//REFERENCE https://www.w3schools.com/php/php_mysql_select.asp
+
+
+fclose($x);
+
+?>
