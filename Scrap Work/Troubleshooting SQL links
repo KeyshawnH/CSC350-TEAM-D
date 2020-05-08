@@ -1,0 +1,23 @@
+Here are some links that I found useful when troubleshooting problems related to the SQL portion:
+
+
+MySQL: what's the difference between INDEX, UNIQUE, FOREIGN KEY, and PRIMARY KEY?
+https://stackoverflow.com/questions/13674109/mysql-whats-the-difference-between-index-unique-foreign-key-and-primary-key/13674291  
+
+Setting up table relations what do “Cascade”, “Set Null” and “Restrict” do?
+https://stackoverflow.com/questions/5383612/setting-up-table-relations-what-do-cascade-set-null-and-restrict-do
+
+Which table should a foreign key live on?
+https://dba.stackexchange.com/questions/123169/which-table-should-a-foreign-key-live-on
+
+How can I fix MySQL error #1064? (an SQL syntax error)
+https://stackoverflow.com/questions/23515347/how-can-i-fix-mysql-error-1064
+
+Unable to add two foreign keys to a table (adding a second foreign key to child table)
+https://stackoverflow.com/questions/25221417/unable-to-add-two-foreign-keys-to-a-table
+
+Why isn't INFORMATION_SCHEMA not displayed in the MySQL Workbench UI by default? (for viewing newly created schemas)
+https://dba.stackexchange.com/questions/177796/why-isnt-information-schema-not-displayed-in-the-mysql-workbench-ui-by-default
+
+MySQL won't let me add a foreign key to table. There is no error message
+https://stackoverflow.com/questions/33337298/mysql-wont-let-me-add-a-foreign-key-to-table-there-is-no-error-message
