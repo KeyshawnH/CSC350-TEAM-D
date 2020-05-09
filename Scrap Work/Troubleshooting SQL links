@@ -24,3 +24,6 @@ https://stackoverflow.com/questions/33337298/mysql-wont-let-me-add-a-foreign-key
 
 ERROR 1452: Cannot add or update a child row: a foreign key constraint fails
 https://stackoverflow.com/questions/21659691/error-1452-cannot-add-or-update-a-child-row-a-foreign-key-constraint-fails
+
+Setting Up Connection between MySQL database and PHP
+https://www.w3schools.com/php/php_mysql_connect.asp
