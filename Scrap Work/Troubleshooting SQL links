@@ -21,3 +21,6 @@ https://dba.stackexchange.com/questions/177796/why-isnt-information-schema-not-d
 
 MySQL won't let me add a foreign key to table. There is no error message
 https://stackoverflow.com/questions/33337298/mysql-wont-let-me-add-a-foreign-key-to-table-there-is-no-error-message
+
+ERROR 1452: Cannot add or update a child row: a foreign key constraint fails
+https://stackoverflow.com/questions/21659691/error-1452-cannot-add-or-update-a-child-row-a-foreign-key-constraint-fails
