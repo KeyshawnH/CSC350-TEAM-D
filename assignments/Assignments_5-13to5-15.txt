@@ -1,0 +1,9 @@
+Assignments final:
+
+
+Meeting with Mike 5-15-20 at 1:00PM
+
+-Develop sample test data
+-Upload the Database Schema
+-Upload Source code
+-Update and finalize DFD
