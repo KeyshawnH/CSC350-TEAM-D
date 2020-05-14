@@ -30,3 +30,6 @@ https://www.w3schools.com/php/php_mysql_connect.asp
 
       Warning: mysqli_connect(): (HY000/1045): access denied for user 'map1user'@'localhost' (using password: YES) in C:\xampp\htdocs\projectgmaps\config.php on line 7
       https://www.codeproject.com/Questions/1235576/Warning-mysqli-connect-HY-access-denied-for-user-m
+      
+      How to access phpmyadmin via localhost on browser
+      https://stackoverflow.com/questions/30255567/i-can-not-access-phpmyadmin-on-xampp
